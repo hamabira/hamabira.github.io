@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>???????????</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+        <h1>???????????</h1>
+        
+        <div class="top-right">
+            <button class="create-btn" onclick="goToNextPage()">??</button>
+            <select id="language-select" onchange="changeLanguage()">
+                <option value="ja">Japanese</option>
+                <option value="en">English</option>
+                <option value="ch">Chinese</option>
+                <option value="ko">Korean</option>
+            </select>
+        </div>
+
+        <table>
+            <tr>
+                <th>???</th>
+            <b>    
+            </tr>
+            <tr>
+                <td><button class="store-btn" onclick="goTostore1Page()">???? ?????</button></td><!--???-->
+                
+            </tr>
+            <tr>
+                <td><button class="store-btn">?? ????</button></td>
+                
+            </tr>
+            <tr>
+                <td><button class="store-btn">??????? ??</button></td>
+                
+            </tr>
+            <tr>
+                <td><button class="store-btn">???</button></td>
+                
+            </tr>
+            </b>
+            </table>
+        </table>
+    
+
+    <script>
+        function goToNextPage() {
+            window.location.href = "edit.html"; // ????URL???
+        }
+        function goTostore1Page(){
+            window.location.href = "shop_view.html";
+        }
+
+        function changeLanguage() {
+            var select = document.getElementById("language-select");
+            var language = select.value;
+
+            if (language === "ja") {
+                window.location.href = "index.html";
+            }
+            else if (language === "en") {
+                window.location.href = "";
+            }
+            else if (language === "ch") {
+                window.location.href = "";
+            }
+            else if (language === "ko") {
+                window.location.href = "";
+            }
+            
+        }    
+    </script>
+</body>
+</html>
